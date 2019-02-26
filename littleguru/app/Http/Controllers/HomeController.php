@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function destroy(User $user) 
+    {
+        return $user->delete();
+    }
 }

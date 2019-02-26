@@ -12,14 +12,9 @@
 */
 Route::get('/','pagecontroller@welcome');
 Route::get('/contact','pagecontroller@contact');
- //Route::get('/','pagecontroller@overmij');
- //Route::get('/zwangerschapsyoga','pagecontroller@zwangerschapsyoga');
- //Route::get('/babymassage','pagecontroller@babymassage');
- //Route::get('/partnerlessen','pagecontroller@partnerlessen');
 
- //Route::get('/contact', function(){
- //   return view('contact');
-//});
+Route::resource('/lessons', 'lessonsController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('events', 'EventController@index');
