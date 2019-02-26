@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<h1>Index</h1>
+<h1>Zwangerschapsyoga</h1>
 @endsection
 
 
